@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Subir PDF</title></head>
+<body>
+  <form action="https://TU_N8N_URL/webhook/pdf-upload" method="post" enctype="multipart/form-data">
+    <label>Email:</label>
+    <input type="email" name="email" required/><br/>
+    <label>Tipo:</label>
+    <select name="tipo" required>
+      <option value="">—Seleccioná—</option>
+      <option value="Informe">Informe</option>
+      <option value="Factura">Factura</option>
+      <option value="Otro">Otro</option>
+    </select><br/>
+    <label>PDF:</label>
+    <input type="file" name="file" accept="application/pdf" required/><br/>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
